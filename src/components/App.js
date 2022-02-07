@@ -13,7 +13,7 @@ function App() {
   const [filterByRating, setFilterByRating] = useState("");
 
   useEffect(() => {
-    new Adapter.getShows().then((shows) => setShows(shows));
+    Adapter.getShows().then((shows) => setShows(shows));
   }, []);
 
   useEffect(() => {
